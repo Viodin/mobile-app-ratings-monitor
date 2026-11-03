@@ -1,0 +1,7 @@
+pandas
+requests
+google-play-scraper
+matplotlib
+nbclient
+nbformat
+ipykernel
