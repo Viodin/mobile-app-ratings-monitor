@@ -60,3 +60,5 @@ jobs:
             git commit -m "Update ratings history"
             git push
           fi
+
+# Scheduled ratings collection
