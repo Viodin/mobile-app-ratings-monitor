@@ -5,3 +5,4 @@ matplotlib
 nbclient
 nbformat
 ipykernel
+nbconvert
