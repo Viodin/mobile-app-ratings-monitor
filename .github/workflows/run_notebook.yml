@@ -36,15 +36,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Check nbconvert
+        run: |
+          python -m nbconvert --version
+          python -c "import bs4; print('BeautifulSoup установлен')"
+
       - name: Execute notebook
         run: |
-          jupyter nbconvert \
-            --to notebook \
-            --execute \
-            --output executed_notebook.ipynb \
-            --output-dir /tmp \
-            --ExecutePreprocessor.timeout=600 \
-            "ТЗ_рейтинг_банк_приложений_гит.ipynb"
+          python -m nbconvert --to notebook --execute --output executed_notebook.ipynb --output-dir /tmp --ExecutePreprocessor.timeout=600 "ТЗ_рейтинг_банк_приложений_гит.ipynb"
 
       - name: Save updated CSV
         run: |
