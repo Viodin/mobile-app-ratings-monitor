@@ -44,7 +44,7 @@ jobs:
             --output executed_notebook.ipynb \
             --output-dir /tmp \
             --ExecutePreprocessor.timeout=600 \
-            "ТЗ_оценки_из_сторов_для_гита.ipynb"
+            "ТЗ_рейтинг_банк_приложений_гит.ipynb"
 
       - name: Save updated CSV
         run: |
