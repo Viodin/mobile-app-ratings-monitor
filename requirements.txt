@@ -5,5 +5,4 @@ matplotlib
 nbclient
 nbformat
 ipykernel
-nbconvert
 beautifulsoup4
