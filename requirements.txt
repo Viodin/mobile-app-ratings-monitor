@@ -6,3 +6,4 @@ nbclient
 nbformat
 ipykernel
 beautifulsoup4
+nbconvert
